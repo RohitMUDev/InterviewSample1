@@ -1,5 +1,7 @@
 package mobile.clock.world.interviewsample;
 
+import android.util.Log;
+
 import androidx.room.TypeConverter;
 
 import com.google.gson.Gson;
@@ -15,6 +17,7 @@ public class Converters {
             List<Integer> list = new ArrayList<>();
 
             String[] array = genreIds.split(",");
+            Log.e("test","test");
 
             for (String s : array) {
                 if (!s.isEmpty()) {
